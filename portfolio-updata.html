@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <style>
+        /* 重置默认间距，保证布局干净 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf9f8;    /* 柔和背景，提升观赏体验 */
+            padding: 2rem 1rem;     /* 上下留白，左右留出安全边距 */
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* 
+           ★ 核心样式：让图片水平居中 + 响应式宽度 ★
+           1. display: block   → 块级化，独占一行，方便 margin 自动
+           2. margin-left/right: auto → 水平居中 (经典方案)
+           3. width: 85%      → 相对于父容器( body )宽度，可根据喜好调整比例
+           4. max-width: 100% → 小屏幕下不超出边界，保证安全
+           5. height: auto    → 保持原始宽高比，不变形
+           6. 添加精致圆角 + 轻阴影，提升高级感（可选，不影响居中核心）
+        */
+        img {
+            display: block;
+            width: 85%;             /* 占据父容器85%宽度，视觉舒适，可改为60%或任意值 */
+            max-width: 1000px;      /* 限制最大宽度，避免超大图过于夸张（可根据需求调整） */
+            height: auto;           /* 自适应高度，维持比例 */
+	    margin: 0 auto; 
+            margin: 0 auto 2rem auto;    /*  上下auto: 水平居中；下边距2rem使图片之间呼吸感 */
+            border-radius: 20px;   /*   优雅圆角，让图片边缘更柔和 */
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: #edeae7;    /* 图片加载前占位色，与背景融合 */
+        }
+
+        /* 悬停微动效 —— 增加一点趣味，完全不干扰居中布局 (可选) */
+        img:hover {
+            transform: scale(1.01);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+        }
+	
+
+        /* 针对移动端微调：让图片宽度更适应小屏，保持居中 */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            img {
+                width: 92%;          /* 手机屏幕稍微再宽一点，充分利用空间 */
+                margin-bottom: 1.5rem;
+                border-radius: 16px;
+            }
+        }
+
+        /* 极窄设备(折叠屏/小手机)依然从容 */
+        @media (max-width: 480px) {
+            img {
+                width: 96%;
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        /* 可选：为页面增加一个非常 subtle 的页脚提示，无关展示中心但提升完整度 */
+        .footer-note {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9b9a97;
+            margin-top: 2rem;
+            padding: 1rem 0;
+            border-top: 1px solid #e4e2de;
+            width: 85%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-note a {
+            color: #7c6e65;
+            text-decoration: none;
+        }
+        .footer-note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 
+    图片列表区域 
+    ✅ 移除了所有内联 width 属性 (例如原 width="1920")，避免干扰 CSS 的居中与宽度控制。
+    ✅ 保持 src 路径与您的原文件完全一致，确保图片正常显示。
+    ✅ 一共16张图片 (1.jpg ~ 10.jpg 及 4-1 ~ 4-7.jpg)，完美居中展示。
+    如果需要增加或删减图片，只需按照相同结构继续添加 img 标签即可。
+-->
+
+<img src="1.jpg" alt="摄影作品 1">
+<img src="2.jpg" alt="摄影作品 2">
+<img src="3.jpg" alt="摄影作品 3">
+<img src="4-1.jpg" alt="摄影作品 4-1">
+<img src="4-2.jpg" alt="摄影作品 4-2">
+<img src="4-3.jpg" alt="摄影作品 4-3">
+<img src="4-4.jpg" alt="摄影作品 4-4">
+<img src="4-5.jpg" alt="摄影作品 4-5">
+<img src="4-6.jpg" alt="摄影作品 4-6">
+<img src="4-7.jpg" alt="摄影作品 4-7">
+<img src="5.jpg" alt="摄影作品 5">
+<img src="6.jpg" alt="摄影作品 6">
+<img src="7.jpg" alt="摄影作品 7">
+<img src="8.jpg" alt="摄影作品 8">
+<img src="9.jpg" alt="摄影作品 9">
+<img src="10.jpg" alt="摄影作品 10">
+
+<!-- 极简装饰脚注，不影响图片居中的核心功能（若不需要可整块删除） -->
+<div class="footer-note">
+    ✦ 已经到底了 ✦
+</div>
+
+</body>
+</html>
