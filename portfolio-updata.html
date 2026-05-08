@@ -31,12 +31,13 @@
             width: 85%;             /* 占据父容器85%宽度，视觉舒适，可改为60%或任意值 */
             max-width: 1000px;      /* 限制最大宽度，避免超大图过于夸张（可根据需求调整） */
             height: auto;           /* 自适应高度，维持比例 */
-	    margin: 0 auto; 
-            margin: 0 auto 2rem auto;    /*  上下auto: 水平居中；下边距2rem使图片之间呼吸感 */
+	        margin: 0 auto; 
+            margin: 0 auto 1rem auto;    /*  上下auto: 水平居中；下边距2rem使图片之间呼吸感 */
             border-radius: 20px;   /*   优雅圆角，让图片边缘更柔和 */
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             background: #edeae7;    /* 图片加载前占位色，与背景融合 */
+			loading="lazy";
         }
 
         /* 悬停微动效 —— 增加一点趣味，完全不干扰居中布局 (可选) */
