@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>图片居中展示 | 摄影集</title>
+    <title>宋展展  |  个人作品集</title>
     <style>
         /* 重置默认间距，保证布局干净 */
         * {
@@ -100,22 +100,22 @@
     如果需要增加或删减图片，只需按照相同结构继续添加 img 标签即可。
 -->
 
-<img src="1.jpg" alt="摄影作品 1">
-<img src="i2.jpg" alt="摄影作品 2">
-<img src="i3.jpg" alt="摄影作品 3">
-<img src="4-1.jpg" alt="摄影作品 4-1">
-<img src="4-2.jpg" alt="摄影作品 4-2">
-<img src="4-3.jpg" alt="摄影作品 4-3">
-<img src="4-4.jpg" alt="摄影作品 4-4">
-<img src="4-5.jpg" alt="摄影作品 4-5">
-<img src="4-6.jpg" alt="摄影作品 4-6">
-<img src="4-7.jpg" alt="摄影作品 4-7">
-<img src="5.jpg" alt="摄影作品 5">
-<img src="i6.jpg" alt="摄影作品 6">
-<img src="7.jpg" alt="摄影作品 7">
-<img src="8.jpg" alt="摄影作品 8">
-<img src="9.jpg" alt="摄影作品 9">
-<img src="10.jpg" alt="摄影作品 10">
+<img src="1.jpg" alt="封面">
+<img src="2.jpg" alt="个人简介">
+<img src="3.jpg" alt="目录">
+<img src="4-1.jpg" alt="详情页1">
+<img src="4-2.jpg" alt="详情页2">
+<img src="4-3.jpg" alt="详情页3">
+<img src="4-4.jpg" alt="详情页4">
+<img src="4-5.jpg" alt="详情页5">
+<img src="4-6.jpg" alt="详情页6">
+<img src="4-7.jpg" alt="详情页7">
+<img src="5.jpg" alt="活动海报+AIGC活动海报">
+<img src="6.jpg" alt="主图展示">
+<img src="7.jpg" alt="Banner展示">
+<img src="8.jpg" alt="C4D建模+渲染">
+<img src="9.jpg" alt="展品精修">
+<img src="10.jpg" alt="谢谢观看">
 
 <!-- 极简装饰脚注，不影响图片居中的核心功能（若不需要可整块删除） -->
 <div class="footer-note">
