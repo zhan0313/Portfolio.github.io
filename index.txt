@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>宋展展  |  个人作品集</title>
+	<script>
+	document.oncontextmenu = function(){
+ 	   return false;
+	}
+	</script>
     <style>
         /* 重置默认间距，保证布局干净 */
         * {
